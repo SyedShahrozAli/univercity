@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./home.css">
     <title>Univercity</title>
+    <script src="home.js"></script>
 </head>
 
 <body>
+    <!-- Header start -->
     <header>
         <a href="./home.html">
             <img src="../pictures/univercity-logo-zip-file/png/logo-no-background.png" alt="univercity-logo"
                 id="header-logo">
         </a>
         <!-- Search bar start -->
-         <div id="header-search-bar-container">
-             <input type="text" id="header-search-bar" placeholder="Search for Topics" >
-             <img src="../pictures/icons/find.png" alt="find" class="icons">
-         </div>
+        <div id="header-search-bar-container">
+            <input type="text" id="header-search-bar" placeholder="Search for Topics">
+            <img src="../pictures/icons/find.png" alt="find" class="icons">
+        </div>
         <!-- Search bar end -->
         <div id="header-profile">
             <a href="" style="text-decoration: none;">
@@ -29,6 +31,42 @@
             </a>
         </div>
     </header>
+    <!-- Header End -->
+    <!-- Main body start -->
+    <div id="main-body">
+    <section id="left-section">
+
+        <button id="main-page" onclick="displayItemToMain('main-page-article')">Main</button>
+        <button id="explore-topics" onclick="displayItemToMain('explore-topics-page-article')">Explore Topics</button>
+        <button id="my-topics" onclick="displayItemToMain('my-topics-page-article')">My Topics</button>
+    </section>
+    <section id="center-section">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, eaque laudantium expedita sapiente sunt itaque
+        soluta iusto? Vitae aspernatur repellendus possimus officiis obcaecati iure minima qui eveniet, nesciunt earum
+        nam ex, sunt sed? Quidemcimus hic iste, culpa eos iure enim minus ex? Expedita, accusamus!
+    </section>
+    <section id="right-section">
+
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque odit assumenda ipsum eligendi nam nobis libero
+        tempore doloribus hic in amet labore eum asperiores delectus debitis consequatur nihil, corporis quibusdam error
+        fugit nisi quaerat. Deleniti quas minus totam nemo doloremque, optio dicta voluptatem placeat. Quos et minima
+        eligendi reiciendis sit consectetur cumque suscipit.
+    </section>
+</div>
+    <!-- Main body end -->
+    <!-- Making different sections to display when menu buttons are pressed -->
+<div style="display: none;">
+
+    <div id="main-page-article">
+        <p>I am the main page article</p>
+    </div>
+    <div id="explore-topics-page-article">
+        <p>I am the explore topics page article</p>
+    </div>
+    <div id="my-topics-page-article">
+        <p>I am the my topics page article</p>
+    </div>
+</div>
 </body>
 
 </html>

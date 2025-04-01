@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 
@@ -54,3 +55,20 @@ header{
     background-color: lightgray;
     height: 30px;
 } */
+
+#main-body {
+    display: flex;
+    margin-top: 50px;
+}
+#right-section{
+    width: 30%;
+}
+#left-section{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+#center-section{
+    width: 60%;
+    padding: 20px;
+}
