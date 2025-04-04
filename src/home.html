@@ -7,40 +7,30 @@
     <link rel="stylesheet" href="./home.css">
     <title>Univercity</title>
     <script src="home.js"></script>
+    <script src="loadCompnent.js"></script>
 </head>
 
 <body>
     <!-- Header start -->
-    <header>
-        <a href="./home.html">
-            <img src="../pictures/univercity-logo-zip-file/png/logo-no-background.png" alt="univercity-logo"
-                id="header-logo">
-        </a>
-        <!-- Search bar start -->
-        <div id="header-search-bar-container">
-            <input type="text" id="header-search-bar" placeholder="Search for Topics">
-            <img src="../pictures/icons/find.png" alt="find" class="icons">
-        </div>
-        <!-- Search bar end -->
-        <div id="header-profile">
-            <a href="" style="text-decoration: none;">
-                <img src="../pictures/icons/bell.png" alt="notification-icon" class="icons">
-            </a>
-            <a href="">
-                <img src="../pictures/icons/user.png" alt="user-icon" class="icons">
-            </a>
-        </div>
-    </header>
-    <!-- Header End -->
+    <div id="header">
+    </div>
+        <script>
+           loadComponent(  'header','header.html');
+        </script>
+    <!-- Header end -->
     <!-- Main body start -->
     <div id="main-body">
     <section id="left-section">
 
         <button id="main-page" onclick="displayItemToMain('main-page-article')">Main</button>
-        <button id="explore-topics" onclick="displayItemToMain('explore-topics-page-article')">Explore Topics</button>
+        <a href="./explore-topics.html">Explore Topics</a>
         <button id="my-topics" onclick="displayItemToMain('my-topics-page-article')">My Topics</button>
     </section>
     <section id="center-section">
+        <a href="./post-template.html">
+
+            <h1>Posts</h1>
+        </a>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, eaque laudantium expedita sapiente sunt itaque
         soluta iusto? Vitae aspernatur repellendus possimus officiis obcaecati iure minima qui eveniet, nesciunt earum
         nam ex, sunt sed? Quidemcimus hic iste, culpa eos iure enim minus ex? Expedita, accusamus!
@@ -54,19 +44,7 @@
     </section>
 </div>
     <!-- Main body end -->
-    <!-- Making different sections to display when menu buttons are pressed -->
-<div style="display: none;">
-
-    <div id="main-page-article">
-        <p>I am the main page article</p>
-    </div>
-    <div id="explore-topics-page-article">
-        <p>I am the explore topics page article</p>
-    </div>
-    <div id="my-topics-page-article">
-        <p>I am the my topics page article</p>
-    </div>
-</div>
+    
 </body>
 
 </html>

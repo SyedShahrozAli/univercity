@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./post-template.css">
+    <title>Univercity</title>
+    <script src="loadCompnent.js"></script>
+    <script src="post-template.js"></script>
+</head>
+
+<body>
+    <!-- This post template shows how a post is displayed. Original post template will not contain rest of the body -->
+    <!-- Header start -->
+    <div id="header">
+
+    </div>
+    <script>
+        loadComponent('header', 'header.html');
+    </script>
+
+    <!-- Header end -->
+    <!-- Post Body start -->
+    <div id="post-container">
+        <div id="left-menu">
+            <h1>Left Menu</h1>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+        <div id="posts-body">
+
+            <div id="post-template">
+                <section id="votes">
+                    <button>
+
+                        <img src="../pictures/icons/arrow-up.png" alt="" onclick="Vote(1)" >
+                    </button>
+                    <p id="score">0</p>
+                    <button>
+
+                        <img src="../pictures/icons/arrow-down.png" alt="" onclick="Vote(-1)">
+                    </button>
+                </section>
+                <section id="postcontent">
+
+                    <h1 id="post-heading">I am the post heading</h1>
+                    <div id="post-text">
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis non perferendis molestiae
+                            harum, quidem ratione nostrum minus dolore molestias expedita quo omnis, accusamus
+                            necessitatibus, voluptate illo nobis. Natus, alias, ducimus laborum reprehenderit temporibus
+                            consequuntur corrupti voluptatibus deleniti harum dicta cumque!</p>
+                            
+                        </div>
+                        <hr>
+                        <div id="interactions">
+                            <button id="share">Share</button>
+                            <button id="comment">Comment</button>
+                        </div>
+                </section>
+            </div>
+        </div>
+        <div id="right-menu">
+            <h1>Right Menu</h1>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Post Body end -->
+</body>
+
+</html>
