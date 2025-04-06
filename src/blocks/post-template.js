@@ -9,3 +9,4 @@ function Vote(vote){
     }
 
 }
+console.log("Vote function loaded");

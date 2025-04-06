@@ -6,45 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./home.css">
     <title>Univercity</title>
-    <script src="home.js"></script>
     <script src="loadCompnent.js"></script>
+    <script src="./blocks/post-template.js"></script>
 </head>
+
+<!-- Every reusable component is present in blocks folder and rendered into the required place through load component -->
 
 <body>
     <!-- Header start -->
     <div id="header">
     </div>
-        <script>
-           loadComponent(  'header','header.html');
-        </script>
+    <script>
+        loadComponent('header', 'header.html', 'header.css');
+
+    </script>
     <!-- Header end -->
+
     <!-- Main body start -->
     <div id="main-body">
-    <section id="left-section">
 
-        <button id="main-page" onclick="displayItemToMain('main-page-article')">Main</button>
-        <a href="./explore-topics.html">Explore Topics</a>
-        <button id="my-topics" onclick="displayItemToMain('my-topics-page-article')">My Topics</button>
-    </section>
-    <section id="center-section">
-        <a href="./post-template.html">
+        <section id="left-section">
 
-            <h1>Posts</h1>
-        </a>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, eaque laudantium expedita sapiente sunt itaque
-        soluta iusto? Vitae aspernatur repellendus possimus officiis obcaecati iure minima qui eveniet, nesciunt earum
-        nam ex, sunt sed? Quidemcimus hic iste, culpa eos iure enim minus ex? Expedita, accusamus!
-    </section>
-    <section id="right-section">
+            <div id="main-menu">
+            </div>
+        </section>
 
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque odit assumenda ipsum eligendi nam nobis libero
-        tempore doloribus hic in amet labore eum asperiores delectus debitis consequatur nihil, corporis quibusdam error
-        fugit nisi quaerat. Deleniti quas minus totam nemo doloremque, optio dicta voluptatem placeat. Quos et minima
-        eligendi reiciendis sit consectetur cumque suscipit.
-    </section>
-</div>
+        <script>
+            loadComponent('main-menu', 'main-menu.html', 'main-menu.css');
+        </script>
+        <section id="center-section">
+            <div id="post-template">
+            </div>
+            <script>
+                    loadComponent('post-template', 'post-template.html', 'post-template.css');
+            </script>
+        </section>
+        <section id="right-section">
+            <h1>Left Section</h1>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque odit assumenda ipsum eligendi nam nobis
+            libero
+            tempore doloribus hic in amet labore eum asperiores delectus debitis consequatur nihil, corporis quibusdam
+            error
+            fugit nisi quaerat. Deleniti quas minus totam nemo doloremque, optio dicta voluptatem placeat. Quos et
+            minima
+            eligendi reiciendis sit consectetur cumque suscipit.
+        </section>
+    </div>
     <!-- Main body end -->
-    
+
+
+
+    <script src="home.js"></script>
 </body>
+
 
 </html>

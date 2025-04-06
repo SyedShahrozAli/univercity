@@ -1,10 +1,20 @@
-function loadComponent(id , file){
+function loadComponent(id , file, stylesfile){
 
-        fetch(file).then(response => response.text()).then(data => {
-        document.getElementById(id).innerHTML = data;})
-        
+        fetch(`blocks/${file}`).then(response => response.text()).then(htmltext => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(htmltext, 'text/html');
+
+        const element = doc.getElementById(id);
+
+        document.getElementById(id).innerHTML = element.innerHTML;
+       })
+         //fetch(`blocks/${file}`).then(response => response.text()).then(data => {
+         //document.getElementById(id).innerHTML = data;})
+         
+       // document.getElementById(id).innerHTML = component;
         let link = document.createElement('link');
         link.rel = "stylesheet";
-        link.href = "styles.css";
+        link.href = `blocks/${stylesfile}`;
         document.head.appendChild(link);
 }
+// The id of both host and guest element must be same
