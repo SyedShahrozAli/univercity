@@ -1,5 +1,5 @@
 # univercity
-univercity.com: A forum like platform to college and university students to connect and seek help for future decisions.
+univercity.com: A forum like platform for college and university students to connect and seek help for future decisions.
 Features
 1. Signup/Login
 2. Make Posts
