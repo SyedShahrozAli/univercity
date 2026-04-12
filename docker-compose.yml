@@ -1,7 +1,7 @@
 services:
   web-app-automated:
     image: node:18-slim
-    container_name: jenkins-app-container-2
+    container_name: jenkins-app-container
     ports:
       - "8081:3000"
     volumes:
