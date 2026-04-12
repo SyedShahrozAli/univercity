@@ -5,6 +5,6 @@ services:
     ports:
       - "8081:3000"
     volumes:
-      - .:/app  # The code fetched by Jenkins is mounted here
+      - .:/app  # The code fetched by Jenkins is mounted at this place
     working_dir: /app
     command: sh -c "npm install && npx next dev"
