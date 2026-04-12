@@ -10,5 +10,5 @@ services:
     command: >
       sh -c "rm -rf node_modules package-lock.json && 
              npm install --platform=linux --arch=x64 && 
-             npm run build && 
+             npx next dev -H 0.0.0.0
              npm start"
