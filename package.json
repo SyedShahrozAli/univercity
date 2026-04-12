@@ -26,6 +26,6 @@
     "tailwindcss": "^4"
   },
   "optionalDependencies": {
-    "@tailwindcss/oxide-linux-x64-gnu": "^4"
+    "@tailwindcss/oxide-linux-x64-gnu": "^3"
   }
 }
