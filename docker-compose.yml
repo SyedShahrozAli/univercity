@@ -1,23 +1,10 @@
-version: '3.8'
 services:
-  web-server:
-    build: .
+  web-app-automated:
+    image: node:18-slim
+    container_name: nextjs_devops_app
     ports:
-      - "80:5000"
-    depends_on:
-      - db
-    environment:
-      DATABASE_URL: postgres://user:password@db:5432/mydb
-
-  db:
-    image: postgres:15-alpine
-    restart: always
-    environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: mydb
+      - "8081:3000"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
-
-volumes:
-  postgres_data:
+      - .:/app  # The code fetched by Jenkins is mounted here
+    working_dir: /app
+    command: sh -c "npm install && npm run dev"
