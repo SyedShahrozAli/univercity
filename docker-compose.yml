@@ -7,4 +7,4 @@ services:
     volumes:
       - .:/app  # The code fetched by Jenkins is mounted here
     working_dir: /app
-    command: sh -c "npm install && npm run dev"
+    command: sh -c "npm install && npx next dev"
