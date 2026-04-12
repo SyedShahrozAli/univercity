@@ -1,16 +1,17 @@
 services:
   web-app-automated:
     image: node:18-slim
-    container_name: jenkins-container
+    container_name: jenkins-app-container
     ports:
       - "8081:3000"
     volumes:
-      - .:/app  # The code fetched by Jenkins is mounted at this place
+      - .:/app
     working_dir: /app
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
     command: >
-     sh -c "rm -rf node_modules package-lock.json && 
-             npm install --platform=linux --arch=x64 && 
+      sh -c "rm -rf node_modules package-lock.json &&
+             npm install --include=optional &&
              npm run build &&
              npm start"
-#npx next dev -H 0.0.0.0
-#rm -rf node_modules package-lock.json && npm install && npm run build && npm start
