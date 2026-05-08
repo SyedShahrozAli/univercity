@@ -10,4 +10,4 @@ Features
 7. Backend Connected
 
    
-Built using Next.js and Firebase.
+Built using Next.js and MongoDB.
