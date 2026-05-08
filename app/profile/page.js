@@ -73,7 +73,7 @@ export default function ProfilePage() {
 
       } catch (err) {
         console.error('Error fetching profile or questions:', err);
-        setError('An unexpected error occurred. Please try again later.');
+        setError('An unexpected error occurred. Please try again.');
       } finally {
         setLoading(false);
       }
