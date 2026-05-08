@@ -52,6 +52,6 @@ export async function protect(request) {
     // Log the error for debugging purposes
     console.error('Token verification error:', error.message);
     // Return an unauthorized response if token verification fails
-    return NextResponse.json({ message: 'Not authorized, token failed' }, { status: 401 });
+    return NextResponse.json({ message: 'Not authorized, your given token failed' }, { status: 401 });
   }
 }
