@@ -42,7 +42,7 @@ export async function protect(request) {
 
     // If no user is found for the given ID (e.g., user deleted), return unauthorized
     if (!user) {
-      return NextResponse.json({ message: 'Not authorized, user not found' }, { status: 401 });
+      return NextResponse.json({ message: 'Not authorized,  user was not found' }, { status: 401 });
     }
 
     // If the token is valid and user is found, return the user object.
