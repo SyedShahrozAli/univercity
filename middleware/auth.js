@@ -29,7 +29,7 @@ export async function protect(request) {
 
   // If no token is found, return an unauthorized response
   if (!token) {
-    return NextResponse.json({ message: 'Not authorized, no token' }, { status: 401 });
+    return NextResponse.json({ message: 'Not authorized, you have no token' }, { status: 401 });
   }
 
   try {
