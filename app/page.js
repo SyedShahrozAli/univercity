@@ -41,7 +41,7 @@ export default function Home() {
       setQuestions(data.questions);
     } catch (err) {
       console.error('Error fetching questions:', err);
-      setQuestionsError('An unexpected error occurred.');
+      setQuestionsError('An unexpected error occurred. Please check console');
     } finally {
       setQuestionsLoading(false);
     }
