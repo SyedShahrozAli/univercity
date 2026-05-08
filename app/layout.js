@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: 'UNIVERCITY', 
-  description: 'A Q&A platform for university students.', // Retaining your desired description
+  description: 'A Question & Answer platform for university students.', 
 };
 
 export default function RootLayout({ children }) {
