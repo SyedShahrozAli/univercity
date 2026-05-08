@@ -40,7 +40,7 @@ export default function LoginPage() {
       router.push('/');
     } catch (err) {
       console.error('Login error:', err);
-      setError('An unexpected error occurred. Please try again later.');
+      setError('An unexpected error occurred. Please try again.');
     } finally {
       setLoading(false);
     }
