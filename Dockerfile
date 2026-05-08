@@ -1,5 +1,13 @@
 # -------- BUILD STAGE --------
 FROM node:20-slim AS builder
+ARG MONGODB_URI
+ARG JWT_SECRET
+
+# Set them as environment variables for the build
+ENV MONGODB_URI=$MONGODB_URI
+ENV JWT_SECRET=$JWT_SECRET
+ENV NODE_ENV=production
+
 WORKDIR /app
 
 RUN apt-get update && apt-get install -y \
